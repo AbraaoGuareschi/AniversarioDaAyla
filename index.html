@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Convite Especial</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <audio id="musica" loop>
+        <source src="clock-clok.mp3" type="audio/mpeg">
+    </audio>
+
+    <!-- TELA PRINCIPAL -->
+    <div id="principal" class="tela ativa">
+
+        <img src="TelaInicio.jpeg" alt="Convite">
+
+        <button class="envelope"
+                onclick="abrirInformacoes()">
+        </button>
+
+    </div>
+
+    <!-- TELA INFORMAÇÕES -->
+    <div id="informacoes" class="tela">
+
+        <img src="TelaInformacoes.jpeg" alt="Informações">
+
+        <button class="btn-presenca"
+                onclick="confirmarPresenca()">
+        </button>
+
+        <button class="btn-localizacao"
+                onclick="abrirLocalizacao()">
+        </button>
+
+        <button class="btn-presentes"
+                onclick="abrirPresentes()">
+        </button>
+
+    </div>
+
+    <!-- TELA PRESENTES -->
+    <div id="presentesTela" class="tela">
+
+        <img src="SugestoesPresentes.jpeg" alt="Presentes">
+
+        <button class="voltar"
+                onclick="voltarInformacoes()">
+            ← Voltar
+        </button>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,141 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html,
+body{
+    width:100%;
+    height:100%;
+    overflow:hidden;
+    background:#000;
+}
+
+.tela{
+    display:none;
+    width:100vw;
+    height:100vh;
+    position:relative;
+}
+
+.tela.ativa{
+    display:block;
+}
+
+.tela img{
+    width:100%;
+    height:100%;
+    object-fit:contain;
+    display:block;
+}
+
+/* ENVELOPE */
+
+.envelope{
+    position:absolute;
+
+    left:50%;
+    top:45%;
+
+    transform:translate(-50%,-50%);
+
+    width:45%;
+    height:20%;
+
+    background:transparent;
+    border:none;
+    cursor:pointer;
+
+    z-index:100;
+}
+
+/* CONFIRMAR PRESENÇA */
+
+.btn-presenca{
+    position:absolute;
+    
+
+    left:43%;
+    top:65%;
+
+    width:8%;
+    height:10%;
+
+    transform:translate(-50%,-50%);
+
+    background:transparent;
+    
+    border:none;
+    cursor:pointer;
+
+    z-index:100;
+}
+
+/* LOCALIZAÇÃO */
+
+.btn-localizacao{
+    position:absolute;
+    
+
+    left:51%;
+    top:65%;
+
+    width:8%;
+    height:10%;
+
+    transform:translate(-50%,-50%);
+
+    
+    background:transparent;
+    
+    border:none;
+    cursor:pointer;
+
+    z-index:100;
+}
+
+/* PRESENTES */
+
+.btn-presentes{
+    position:absolute;
+    
+
+    left:59%;
+    top:65%;
+
+    width:8%;
+    height:10%;
+
+    transform:translate(-50%,-50%);
+
+    background:transparent;
+    
+    border:none;
+    cursor:pointer;
+
+    z-index:100;
+}
+
+/* BOTÃO VOLTAR */
+
+.voltar{
+    position:absolute;
+
+    top:20px;
+    left:20px;
+
+    padding:10px 20px;
+
+    border:none;
+    border-radius:20px;
+
+    background:white;
+    color:black;
+
+    font-weight:bold;
+
+    cursor:pointer;
+
+    z-index:200;
+}
