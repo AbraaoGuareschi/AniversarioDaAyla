@@ -1,60 +1,141 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Convite Especial</title>
-    <link rel="stylesheet" href="Style.css">
-</head>
-<body>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
 
-    <audio id="musica" loop>
-        <source src="clock-clok.mp3" type="audio/mpeg">
-    </audio>
+html,
+body{
+    width:100%;
+    height:100%;
+    background:#000;
+    overflow:hidden;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
 
-    <!-- TELA PRINCIPAL -->
-    <div id="principal" class="tela ativa">
+.tela{
+    display:none;
+    position:relative;
+    width:100%;
+    max-width:500px;
+    height:100vh;
+}
 
-        <img src="TelaInicio.jpeg" alt="Convite">
+.tela.ativa{
+    display:block;
+}
 
-        <button class="envelope"
-                onclick="abrirInformacoes()">
-        </button>
+.tela img{
+    width:100%;
+    height:100%;
+    object-fit:contain;
+    display:block;
+}
 
-    </div>
+/* ENVELOPE */
 
-    <!-- TELA INFORMAÇÕES -->
-    <div id="informacoes" class="tela">
+.envelope{
+    position:absolute;
 
-        <img src="TelaInformacoes.jpeg" alt="Informações">
+    left:50%;
+    top:47%;
 
-        <button class="btn-presenca"
-                onclick="confirmarPresenca()">
-        </button>
+    transform:translate(-50%,-50%);
 
-        <button class="btn-localizacao"
-                onclick="abrirLocalizacao()">
-        </button>
+    width:42%;
+    height:20%;
 
-        <button class="btn-presentes"
-                onclick="abrirPresentes()">
-        </button>
+    background:transparent;
+    border:none;
+    cursor:pointer;
 
-    </div>
+    z-index:999;
+}
 
-    <!-- TELA PRESENTES -->
-    <div id="presentesTela" class="tela">
+/* CONFIRMAR PRESENÇA */
 
-        <img src="SugestoesPresentes.jpeg" alt="Presentes">
+.btn-presenca{
+    position:absolute;
 
-        <button class="voltar"
-                onclick="voltarInformacoes()">
-            ← Voltar
-        </button>
+    left:23%;
+    top:68%;
 
-    </div>
+    width:18%;
+    height:12%;
 
-    <script src="script.js"></script>
+    transform:translate(-50%,-50%);
 
-</body>
-</html>
+    background:rgba(255,0,0,0.25);
+
+    border:none;
+    cursor:pointer;
+
+    z-index:999;
+}
+
+/* LOCALIZAÇÃO */
+
+.btn-localizacao{
+    position:absolute;
+
+    left:50%;
+    top:68%;
+
+    width:18%;
+    height:12%;
+
+    transform:translate(-50%,-50%);
+
+    background:rgba(0,0,255,0.25);
+
+    border:none;
+    cursor:pointer;
+
+    z-index:999;
+}
+
+/* PRESENTES */
+
+.btn-presentes{
+    position:absolute;
+
+    left:77%;
+    top:68%;
+
+    width:18%;
+    height:12%;
+
+    transform:translate(-50%,-50%);
+
+    background:rgba(0,255,0,0.25);
+
+    border:none;
+    cursor:pointer;
+
+    z-index:999;
+}
+
+/* VOLTAR */
+
+.voltar{
+    position:absolute;
+
+    top:20px;
+    left:20px;
+
+    padding:10px 20px;
+
+    border:none;
+    border-radius:20px;
+
+    background:white;
+    color:black;
+
+    font-weight:bold;
+
+    cursor:pointer;
+
+    z-index:1000;
+}
