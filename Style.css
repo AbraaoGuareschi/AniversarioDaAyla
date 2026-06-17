@@ -1,141 +1,141 @@
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 html,
-body{
-    width:100%;
-    height:100%;
-    overflow:hidden;
-    background:#000;
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    min-height: 100vh;
+    background: #000;
 }
 
-.tela{
-    display:none;
-    width:100vw;
-    height:100vh;
-    position:relative;
+.tela {
+    display: none;
+    position: relative;
+    width: 100%;
+    max-width: 500px;
+    aspect-ratio: 9/16;
+    height: 100vh;
+    max-height: 100vh;
 }
 
-.tela.ativa{
-    display:block;
+.tela.ativa {
+    display: block;
 }
 
-.tela img{
-    width:100%;
-    height:100%;
-    object-fit:contain;
-    display:block;
+.tela img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
 }
 
 /* ENVELOPE */
 
-.envelope{
-    position:absolute;
+.envelope {
+    position: absolute;
 
-    left:50%;
-    top:45%;
+    left: 50%;
+    top: 47%;
 
-    transform:translate(-50%,-50%);
+    transform: translate(-50%, -50%);
 
-    width:45%;
-    height:20%;
+    width: 42%;
+    height: 20%;
 
-    background:transparent;
-    border:none;
-    cursor:pointer;
+    background: transparent;
+    border: none;
+    cursor: pointer;
 
-    z-index:100;
+    z-index: 999;
 }
 
 /* CONFIRMAR PRESENÇA */
 
-.btn-presenca{
-    position:absolute;
-    
+.btn-presenca {
+    position: absolute;
 
-    left:43%;
-    top:65%;
+    left: 23%;
+    top: 68%;
 
-    width:8%;
-    height:10%;
+    width: 18%;
+    height: 12%;
 
-    transform:translate(-50%,-50%);
+    transform: translate(-50%, -50%);
 
-    background:transparent;
-    
-    border:none;
-    cursor:pointer;
+    background: rgba(255, 0, 0, 0.25);
 
-    z-index:100;
+    border: none;
+    cursor: pointer;
+
+    z-index: 999;
 }
 
 /* LOCALIZAÇÃO */
 
-.btn-localizacao{
-    position:absolute;
-    
+.btn-localizacao {
+    position: absolute;
 
-    left:51%;
-    top:65%;
+    left: 50%;
+    top: 68%;
 
-    width:8%;
-    height:10%;
+    width: 18%;
+    height: 12%;
 
-    transform:translate(-50%,-50%);
+    transform: translate(-50%, -50%);
 
-    
-    background:transparent;
-    
-    border:none;
-    cursor:pointer;
+    background: rgba(0, 0, 255, 0.25);
 
-    z-index:100;
+    border: none;
+    cursor: pointer;
+
+    z-index: 999;
 }
 
 /* PRESENTES */
 
-.btn-presentes{
-    position:absolute;
-    
+.btn-presentes {
+    position: absolute;
 
-    left:59%;
-    top:65%;
+    left: 77%;
+    top: 68%;
 
-    width:8%;
-    height:10%;
+    width: 18%;
+    height: 12%;
 
-    transform:translate(-50%,-50%);
+    transform: translate(-50%, -50%);
 
-    background:transparent;
-    
-    border:none;
-    cursor:pointer;
+    background: rgba(0, 255, 0, 0.25);
 
-    z-index:100;
+    border: none;
+    cursor: pointer;
+
+    z-index: 999;
 }
 
-/* BOTÃO VOLTAR */
+/* VOLTAR */
 
-.voltar{
-    position:absolute;
+.voltar {
+    position: absolute;
 
-    top:20px;
-    left:20px;
+    top: 20px;
+    left: 20px;
 
-    padding:10px 20px;
+    padding: 10px 20px;
 
-    border:none;
-    border-radius:20px;
+    border: none;
+    border-radius: 20px;
 
-    background:white;
-    color:black;
+    background: white;
+    color: black;
 
-    font-weight:bold;
+    font-weight: bold;
 
-    cursor:pointer;
+    cursor: pointer;
 
-    z-index:200;
+    z-index: 1000;
 }
